@@ -1,0 +1,84 @@
+// CHARACTER (class)
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+{
+    'name':                 'Steve'                 // string
+    'type':                 characterTypes.HUMAN    // enum
+    'playable':             true                    // bool
+    'status':               {...}                   // status class
+    'elementals':           [{...}]                 // class
+    'conditions':           [{...}]                 // condition class
+}
+
+// WEAPON (class)
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+    'name':                 'Ice Sword'         // string
+    'attackPower':          50                  // int
+    'attackVariance':       10                  // int
+    'attackType':           attackTypes.BLADE   // enum
+    'attackElementals':     [{...}]             // class
+    'payloads':             [{...}]             // condition class
+    'payloadChance':        0                   // percentage
+    'rebounds':             [{...}]             // condition class
+    'reboundChance':        0                   // percentage
+    'statChanges':          [{...}]             // status class
+    'weight':               20                  // int
+}
+
+// STATUS (class)
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+    'hitPoints':            50          // int
+    'maxHitPoints':         100         // int
+    'magicPoints':          30          // int
+    'maxMagicPoints':       40          // int
+    'strength':             40          // int
+    'agility':              30          // int
+    'weight':               60          // int
+}
+
+// CONDITION (class)
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+{
+    'name':                 'confusion'         // string
+    'amount':               40                  // int
+    'decayRate':            5                   // int
+    'statChanges':          [{...}]             // status class
+}
+
+// ELEMENTAL (class)
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+{
+    'type':                 elements.FIRE       // enum
+    'amount':               5                   // int
+}
+
+// CHARACTER TYPES (enum)
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+characterTypes = {
+    HUMAN: 0
+    MONSTER: 1
+    // etc
+}
+
+// ATTACK TYPES (enum)
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+attackTypes = {
+    'BLADE':        0
+    'PROJECTILE':   1
+    // etc
+}
+
+// ELEMENTS (enum)
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+elements = {
+    'FIRE':     0
+    'ICE':      1
+    'WATER':    2
+    // etc
+}
